@@ -15,12 +15,14 @@
 	<table class="table table-responsive table-hover table-condensed table-bordered" id="tabla">
 	    <thead>
             <th>Nombre</th>
+            <th>Horas</th>
             <th>Acciones</th>
 	    </thead>
 	    <tbody>
 		    @foreach ($competition as $com)
 		        <tr>
 		            <th> {{$com->name}}</th>
+		            <th> {{$com->hours}}</th>
 		            <td>
 					    <form action="{{action('CompetitionController@destroy', $com['id'])}}" method="post">
 			                @csrf
@@ -34,8 +36,6 @@
 		</tbody>
 	</table>
 </div>
-
-
 <div class="row justify-content-center" style="margin-top: 20px"> 
 	<div class="col-1">
 		<a href="{{ url('competitions/create')}}"><button type="button" class="btn btn-primary">Crear Competencia</button></a>	

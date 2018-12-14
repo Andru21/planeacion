@@ -9,7 +9,7 @@
 @method('PUT')
 @csrf
 	
-	@include('forms.result')
+	@include('forms.results')
 	
 	<div class="row justify-content-center" style="margin-top: 20px">
 		<div class="col-1">

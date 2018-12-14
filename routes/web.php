@@ -22,6 +22,10 @@ Route::resource('transversals','TransversalController');
 
 Route::resource('results','ResultController');
 
+Route::resource('program_transversals','ProgramTransversalController');
+
+Route::resource('competition_programs','CompetitionProgramController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

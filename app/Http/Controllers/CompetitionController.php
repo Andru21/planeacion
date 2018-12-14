@@ -40,6 +40,7 @@ class CompetitionController extends Controller
     {
         $competition = new Competition();
         $competition->name = $request->input('name');
+        $competition->hours = $request->input('hours');
         $competition->save();
         return redirect()->route('competitions.index')->with('success', 'La competencia a sido creada satisfactoriamente');
 
@@ -78,6 +79,7 @@ class CompetitionController extends Controller
     public function update(Request $request, Competition $competition)
     {
         $competition->name = $request->get('name');
+        $competition->hours = $request->get('hours');
         $competition->save();
         return redirect()->route('competitions.index', [$competition])->with('update','La competencia a sido actualizada satisfactoriamente');
     }

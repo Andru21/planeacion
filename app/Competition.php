@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Competition extends Model
 {
-    public function programs(){
+    public function program(){
     	return $this->belongsToMany(Program::class, 'competition_programs');
     }
 

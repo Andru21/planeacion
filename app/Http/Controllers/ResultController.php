@@ -15,11 +15,8 @@ class ResultController extends Controller
      */
     public function index()
     {
-        // $result = result::pluck('name','competition_id');
         $result = result::all();
         return view('results.index', compact('result'));
-        // return $result;
-
     }
 
     /**
@@ -68,7 +65,8 @@ class ResultController extends Controller
     public function edit($id)
     {
         $result = Result::find($id);
-        return view('results.edit',compact('result'));
+        $compe = Competition::all();
+        return view('results.edit',compact('result','compe'));
     }
 
     /**

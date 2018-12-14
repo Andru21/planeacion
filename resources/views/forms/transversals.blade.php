@@ -13,19 +13,19 @@
 	<div class="col-1">
 		<div class="form-group">
 			<label>Auxiliar:</label>
-			<input type="text" class="form-control" name="auxiliary_hours">
+			<input type="number" class="form-control" name="auxiliary_hours">
 		</div>	
 	</div>
 	<div class="col-1">
 		<div class="form-group">
 			<label>Tecnico:</label>
-			<input type="text" class="form-control" name="technical_hours">
+			<input type="number" class="form-control" name="technical_hours">
 		</div>
 	</div>
 	<div class="col-1">
 		<div class="form-group">
 			<label>Tecnologo:</label>
-			<input type="text" class="form-control" name="technologist_hours">
+			<input type="number" class="form-control" name="technologist_hours">
 		</div>
 	</div>
 </div>
